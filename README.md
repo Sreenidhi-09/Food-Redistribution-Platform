@@ -8,7 +8,7 @@ A full stack web platform that connects surplus food providers with NGOs, enabli
 
 ---
 
-## 📌 Overview
+## Overview
 
 Every day, thousands of kilograms of perfectly edible food are discarded while many communities continue to face food insecurity.
 
@@ -18,7 +18,7 @@ The platform focuses on making food donation simple, transparent, scalable, and 
 
 ---
 
-## 🚨 Problem Statement
+## Problem Statement
 
 Current food donation processes are often:
 
@@ -30,9 +30,7 @@ Current food donation processes are often:
 
 As a result, large quantities of edible food are wasted despite significant demand.
 
----
-
-## 💡 Proposed Solution
+## Proposed Solution
 
 The platform creates a centralized ecosystem where:
 
@@ -41,11 +39,9 @@ The platform creates a centralized ecosystem where:
 * Administrators verify organizations and monitor activity.
 * Donations are tracked from creation to successful delivery.
 
----
+## Stakeholders
 
-## 👥 Stakeholders
-
-### 🍴 Food Donors
+### Food Donors
 
 * Restaurants
 * Hotels
@@ -53,23 +49,22 @@ The platform creates a centralized ecosystem where:
 * Caterers
 * Corporate Cafeterias
 
-### ❤️ NGOs
+### NGOs
 
 * Food Banks
 * Community Kitchens
 * Shelters
 * Charitable Organizations
 
-### 🛡️ Administrators
+### Administrators
 
 * NGO Verification
 * Platform Monitoring
 * Analytics
 * Issue Resolution
 
----
 
-## ✨ Planned Features
+## Planned Features
 
 * Secure User Authentication
 * NGO Verification
@@ -82,9 +77,8 @@ The platform creates a centralized ecosystem where:
 * Notification System
 * Admin Dashboard
 
----
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer          | Technology        |
 | -------------- | ----------------- |
@@ -94,9 +88,8 @@ The platform creates a centralized ecosystem where:
 | Authentication | JWT               |
 | Deployment     | Vercel + Render   |
 
----
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Food-Redistribution-Platform/
@@ -110,11 +103,9 @@ frontend/
 README.md
 ```
 
----
+## Development Status
 
-## 🚧 Development Status
-
-### ✅ Completed
+### Completed
 
 * Project Ideation
 * Problem Analysis
@@ -122,27 +113,25 @@ README.md
 * Stakeholder Identification
 * Repository Setup
 
-### 🔄 In Progress
+### In Progress
 
 * System Design
 * Database Design
 * Frontend Development
 
-### 📅 Upcoming
+### Upcoming
 
 * Backend APIs
 * Authentication
 * Smart Matching Algorithm
 * Deployment
 
----
 
-## 🌍 Vision
+## Vision
 
 To build a scalable technology platform that reduces food waste, improves food accessibility, and enables efficient coordination between food donors and NGOs.
 
----
 
-## 📄 License
+## License
 
 Licensed under the MIT License.
