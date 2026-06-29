@@ -3,8 +3,6 @@
 > A full stack web platform connecting surplus food providers with verified NGOs to reduce food wastage through efficient donation matching, transparent coordination, and streamlined logistics.
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
-![Version](https://img.shields.io/badge/Version-v0.1-orange)
 
 ---
 
