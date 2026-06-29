@@ -3,8 +3,6 @@
 A full stack web platform that connects surplus food providers with NGOs, enabling efficient food redistribution and reducing food waste through optimized coordination and transparent logistics.
 </p>
 
----
-
 ## Overview
 
 Every day, thousands of kilograms of perfectly edible food are discarded while many communities continue to face food insecurity.
@@ -12,8 +10,6 @@ Every day, thousands of kilograms of perfectly edible food are discarded while m
 The Food Redistribution Platform is designed to bridge this gap by connecting restaurants, hotels, supermarkets, corporate cafeterias, and other food providers with verified NGOs that can collect and distribute surplus food to people in need.
 
 The platform focuses on making food donation simple, transparent, scalable, and efficient.
-
----
 
 ## Problem Statement
 
