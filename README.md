@@ -1,4 +1,4 @@
-# 🍽️ Food Redistribution Platform
+# Food Redistribution Platform
 
 ### Reducing Food Waste • Connecting Communities • Creating Social Impact
 
@@ -8,9 +8,7 @@
 ![Database](https://img.shields.io/badge/Database-MongoDB-47A248)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
----
-
-## 📖 Overview
+## Overview
 
 Every day, thousands of kilograms of perfectly edible food are discarded while millions continue to face food insecurity.
 
@@ -18,9 +16,8 @@ The Food Redistribution Platform is a full stack web application designed to bri
 
 The platform simplifies food donation by enabling transparent coordination, intelligent matching, and real time tracking between all stakeholders involved in the redistribution process.
 
----
 
-# 📑 Table of Contents
+# Table of Contents
 
 * Overview
 * Problem Statement
@@ -37,9 +34,7 @@ The platform simplifies food donation by enabling transparent coordination, inte
 * Vision
 * License
 
----
-
-# 🚨 Problem Statement
+# Problem Statement
 
 India generates enormous quantities of food waste every day while many individuals and families continue to struggle with food insecurity.
 
@@ -53,7 +48,6 @@ Existing food donation systems often rely on manual communication, making them:
 
 These inefficiencies frequently result in edible food being discarded instead of reaching communities in need.
 
----
 
 # 🌱 Why This Project?
 
@@ -63,9 +57,8 @@ This project explores how software engineering can improve logistics, coordinati
 
 The ultimate objective is to create a scalable digital ecosystem capable of reducing food waste while maximizing social impact.
 
----
 
-# 💡 Proposed Solution
+# Proposed Solution
 
 The Food Redistribution Platform provides a centralized ecosystem where:
 
@@ -75,11 +68,10 @@ The Food Redistribution Platform provides a centralized ecosystem where:
 * Every donation is tracked from creation to successful delivery.
 * The entire workflow remains transparent and efficient.
 
----
 
-# 👥 Stakeholders
+# Stakeholders
 
-## 🍴 Food Donors
+## Food Donors
 
 * Restaurants
 * Hotels
@@ -95,9 +87,7 @@ The Food Redistribution Platform provides a centralized ecosystem where:
 * Monitor donation history
 * Confirm successful pickup
 
----
-
-## ❤️ NGOs
+## NGOs
 
 * Food Banks
 * Community Kitchens
@@ -112,9 +102,7 @@ The Food Redistribution Platform provides a centralized ecosystem where:
 * Coordinate pickups
 * Confirm successful delivery
 
----
-
-## 🛡️ Administrators
+## Administrators
 
 ### Responsibilities
 
@@ -124,9 +112,7 @@ The Food Redistribution Platform provides a centralized ecosystem where:
 * Monitor analytics
 * Maintain platform security
 
----
-
-# ✨ Planned Features
+# Planned Features
 
 ## Authentication
 
@@ -134,8 +120,6 @@ The Food Redistribution Platform provides a centralized ecosystem where:
 * Login
 * JWT Authentication
 * Role Based Access
-
----
 
 ## Donation Management
 
@@ -145,16 +129,12 @@ The Food Redistribution Platform provides a centralized ecosystem where:
 * Donation History
 * Expiry Tracking
 
----
-
 ## NGO Management
 
 * NGO Registration
 * Verification Workflow
 * Donation Requests
 * Pickup Confirmation
-
----
 
 ## Smart Matching
 
@@ -163,15 +143,11 @@ The Food Redistribution Platform provides a centralized ecosystem where:
 * Food Category Matching
 * Availability Based Suggestions
 
----
-
 ## Dashboard
 
 * Donor Dashboard
 * NGO Dashboard
 * Admin Dashboard
-
----
 
 ## Notifications
 
@@ -179,9 +155,7 @@ The Food Redistribution Platform provides a centralized ecosystem where:
 * Pickup Reminders
 * Status Updates
 
----
-
-# 🏗️ High Level System Architecture
+# High Level System Architecture
 
 ```text
                     Food Redistribution Platform
@@ -196,7 +170,7 @@ The Food Redistribution Platform provides a centralized ecosystem where:
                     │     Express Backend API     │
                     └──────────────┬──────────────┘
                                    │
-         ┌──────────────┬──────────┼──────────┬──────────────┐
+         ┌──────────────┬──────────┼──────────┬
          ▼              ▼          ▼          ▼
  Authentication   Donation API   NGO API   Admin API
          │              │          │          │
@@ -208,8 +182,6 @@ The Food Redistribution Platform provides a centralized ecosystem where:
                          │
                   Email / SMS (Future)
 ```
-
----
 
 # 🛠 Technology Stack
 
@@ -224,9 +196,7 @@ The Food Redistribution Platform provides a centralized ecosystem where:
 | Version Control | Git & GitHub    |
 | Deployment      | Vercel & Render |
 
----
-
-# 📂 Project Structure
+# Project Structure
 
 ```text
 Food-Redistribution-Platform/
@@ -242,9 +212,7 @@ LICENSE
 .gitignore
 ```
 
----
-
-# 🗺️ Development Roadmap
+# Development Roadmap
 
 ## Phase 1
 
@@ -253,15 +221,11 @@ LICENSE
 * System Design
 * Database Design
 
----
-
 ## Phase 2
 
 * React Frontend
 * User Authentication
 * Responsive UI
-
----
 
 ## Phase 3
 
@@ -269,15 +233,11 @@ LICENSE
 * REST APIs
 * MongoDB Integration
 
----
-
 ## Phase 4
 
 * Smart Donation Matching
 * Notifications
 * Analytics Dashboard
-
----
 
 ## Phase 5
 
@@ -285,8 +245,6 @@ LICENSE
 * Deployment
 * Documentation
 * Performance Optimization
-
----
 
 # 🚧 Current Progress
 
@@ -298,18 +256,14 @@ LICENSE
 * Stakeholder Identification
 * Initial Documentation
 
----
-
-## 🔄 In Progress
+## In Progress
 
 * System Architecture
 * Database Design
 * UI Design
 * API Planning
 
----
-
-## 📅 Upcoming
+## Upcoming
 
 * Frontend Development
 * Backend Development
@@ -317,9 +271,8 @@ LICENSE
 * Smart Matching
 * Deployment
 
----
 
-# 🚀 Future Scope
+# Future Scope
 
 * AI Based Donation Prediction
 * Route Optimization
@@ -329,33 +282,25 @@ LICENSE
 * Carbon Footprint Analytics
 * Multi Language Support
 
----
-
-# 🌍 Vision
+# Vision
 
 To build a scalable and reliable technology platform that empowers communities by reducing food waste, improving food accessibility, and enabling seamless coordination between donors, NGOs, and administrators.
 
 The long term vision is to establish an ecosystem where surplus food reaches those who need it most through intelligent, transparent, and efficient digital infrastructure.
 
----
-
-# 🤝 Contributing
+# Contributing
 
 This project is currently under active development.
 
 Contributions, ideas, and suggestions will be welcomed once the initial MVP is completed.
 
----
-
-# 📄 License
+# License
 
 This project is licensed under the MIT License.
 
----
+## Author
 
-## 👨‍💻 Author
-
-**Sreenidhi**
+**Sreenidhi K**
 
 M.Sc. Chemistry + B.E. Mathematics and Computing
 BITS Pilani
