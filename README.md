@@ -4,6 +4,10 @@
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-blue)
 
+> **Note**
+>
+> This project is currently under active development. The documentation reflects the planned system architecture and feature set. Implementation will evolve incrementally as development progresses.
+
 ---
 
 ## Overview
@@ -62,6 +66,18 @@ The platform enables:
 * Login
 * JWT Authentication
 * Role Based Authorization
+
+## Minimum Viable Product
+
+The initial release of the platform will support:
+
+* User authentication
+* Donor registration
+* NGO registration
+* Donation creation and management
+* Donation requests
+* Admin verification
+* Donation tracking
 
 ### Food Donation
 
@@ -173,18 +189,25 @@ LICENSE
 
 ## Current Progress
 
-Completed
+### Completed
 
-* Repository Setup
-* Project Planning
-* Requirement Analysis
-* Initial Documentation
+- [x] Repository setup
+- [x] Requirement analysis
+- [x] Project planning
+- [x] Initial documentation
 
-Currently Working On
+### In Progress
 
-* System Architecture
-* Database Design
-* Frontend Development
+- [ ] System architecture
+- [ ] Database design
+- [ ] Frontend development
+
+### Upcoming
+
+- [ ] Backend implementation
+- [ ] Authentication
+- [ ] Donation matching
+- [ ] Deployment
 
 ---
 
@@ -216,3 +239,11 @@ Upcoming documentation includes:
 ## License
 
 This project is licensed under the MIT License.
+
+---
+## Author
+
+**Sreenidhi**
+
+M.Sc. Chemistry + B.E. Mathematics and Computing  
+BITS Pilani
