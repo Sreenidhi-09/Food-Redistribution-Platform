@@ -1,202 +1,121 @@
 # Food Redistribution Platform
 
-### Reducing Food Waste • Connecting Communities • Creating Social Impact
+> A full stack web platform connecting surplus food providers with verified NGOs to reduce food wastage through efficient donation matching, transparent coordination, and streamlined logistics.
 
 ![Status](https://img.shields.io/badge/Status-In%20Progress-blue)
-![Frontend](https://img.shields.io/badge/Frontend-React-61DAFB)
-![Backend](https://img.shields.io/badge/Backend-Node.js-339933)
-![Database](https://img.shields.io/badge/Database-MongoDB-47A248)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Version](https://img.shields.io/badge/Version-v0.1-orange)
+
+---
 
 ## Overview
 
-Every day, thousands of kilograms of perfectly edible food are discarded while millions continue to face food insecurity.
+Food wastage and food insecurity continue to coexist despite significant advances in technology and logistics.
 
-The Food Redistribution Platform is a full stack web application designed to bridge this gap by connecting restaurants, hotels, supermarkets, corporate cafeterias, catering businesses, and other food providers with verified NGOs that can efficiently collect and distribute surplus food.
+The Food Redistribution Platform aims to bridge this gap by creating a centralized ecosystem where restaurants, hotels, supermarkets, corporate cafeterias, and other food providers can donate surplus food to verified NGOs. The platform focuses on simplifying donation workflows, improving operational efficiency, and ensuring transparency throughout the redistribution process.
 
-The platform simplifies food donation by enabling transparent coordination, intelligent matching, and real time tracking between all stakeholders involved in the redistribution process.
+---
 
+## Problem Statement
 
-# Table of Contents
+Existing food donation processes are often manual, fragmented, and difficult to coordinate.
 
-* Overview
-* Problem Statement
-* Why This Project?
-* Proposed Solution
-* Stakeholders
-* Planned Features
-* System Architecture
-* Technology Stack
-* Project Structure
-* Development Roadmap
-* Current Progress
-* Future Scope
-* Vision
-* License
+Common challenges include:
 
-# Problem Statement
+* Delayed communication between donors and NGOs
+* Lack of visibility into available donations
+* No standardized donation tracking
+* Inefficient allocation of surplus food
+* Limited operational transparency
 
-India generates enormous quantities of food waste every day while many individuals and families continue to struggle with food insecurity.
+These inefficiencies result in edible food being wasted instead of reaching communities in need.
 
-Existing food donation systems often rely on manual communication, making them:
+---
 
-* Slow
-* Fragmented
-* Difficult to coordinate
-* Poorly tracked
-* Inefficient at scale
+## Proposed Solution
 
-These inefficiencies frequently result in edible food being discarded instead of reaching communities in need.
+The platform enables:
 
+* Registration of food donors and NGOs
+* Secure authentication and role based access
+* Donation creation and management
+* Intelligent donation matching
+* Pickup scheduling
+* Real time donation tracking
+* Administrative verification and monitoring
 
-# 🌱 Why This Project?
+---
 
-Technology has transformed industries such as transportation, finance, and healthcare, yet surplus food redistribution still relies heavily on manual coordination.
+## Planned Features
 
-This project explores how software engineering can improve logistics, coordination, transparency, and accessibility within food donation networks.
+### Authentication
 
-The ultimate objective is to create a scalable digital ecosystem capable of reducing food waste while maximizing social impact.
-
-
-# Proposed Solution
-
-The Food Redistribution Platform provides a centralized ecosystem where:
-
-* Food donors can quickly publish available surplus food.
-* NGOs receive nearby donation opportunities.
-* Administrators verify organizations and maintain platform integrity.
-* Every donation is tracked from creation to successful delivery.
-* The entire workflow remains transparent and efficient.
-
-
-# Stakeholders
-
-## Food Donors
-
-* Restaurants
-* Hotels
-* Supermarkets
-* Catering Services
-* Corporate Cafeterias
-* Event Organizers
-
-### Responsibilities
-
-* Publish food donations
-* Update food availability
-* Monitor donation history
-* Confirm successful pickup
-
-## NGOs
-
-* Food Banks
-* Community Kitchens
-* Shelters
-* Orphanages
-* Charitable Organizations
-
-### Responsibilities
-
-* Browse nearby donations
-* Request available food
-* Coordinate pickups
-* Confirm successful delivery
-
-## Administrators
-
-### Responsibilities
-
-* Verify NGOs
-* Moderate platform activity
-* Resolve disputes
-* Monitor analytics
-* Maintain platform security
-
-# Planned Features
-
-## Authentication
-
-* Secure Registration
+* User Registration
 * Login
 * JWT Authentication
-* Role Based Access
+* Role Based Authorization
 
-## Donation Management
+### Food Donation
 
 * Create Donation
 * Update Donation
 * Delete Donation
-* Donation History
 * Expiry Tracking
+* Donation History
 
-## NGO Management
+### NGO Portal
 
-* NGO Registration
-* Verification Workflow
-* Donation Requests
+* Browse Available Donations
+* Request Donations
 * Pickup Confirmation
+* Delivery Status
 
-## Smart Matching
+### Administration
 
-* Nearby NGO Discovery
-* Distance Based Allocation
-* Food Category Matching
-* Availability Based Suggestions
+* NGO Verification
+* User Management
+* Platform Analytics
+* Issue Resolution
 
-## Dashboard
+---
 
-* Donor Dashboard
-* NGO Dashboard
-* Admin Dashboard
-
-## Notifications
-
-* Donation Alerts
-* Pickup Reminders
-* Status Updates
-
-# High Level System Architecture
-
-```text
-                    Food Redistribution Platform
-
-                    ┌──────────────────────────┐
-                    │        React Frontend    │
-                    └──────────────┬───────────┘
-                                   │
-                          REST API Requests
-                                   │
-                    ┌──────────────▼──────────────┐
-                    │     Express Backend API     │
-                    └──────────────┬──────────────┘
-                                   │
-         ┌──────────────┬──────────┼──────────┬
-         ▼              ▼          ▼          ▼
- Authentication   Donation API   NGO API   Admin API
-         │              │          │          │
-         └──────────────┴──────────┴──────────┘
-                         │
-                    MongoDB Database
-                         │
-               Notification Service
-                         │
-                  Email / SMS (Future)
-```
-
-# 🛠 Technology Stack
+## Technology Stack
 
 | Layer           | Technology      |
 | --------------- | --------------- |
 | Frontend        | React           |
-| Styling         | CSS             |
 | Backend         | Node.js         |
 | Framework       | Express.js      |
 | Database        | MongoDB         |
 | Authentication  | JWT             |
 | Version Control | Git & GitHub    |
-| Deployment      | Vercel & Render |
+| Deployment      | Vercel + Render |
 
-# Project Structure
+---
+
+## High Level Architecture
+
+```text
+                 React Frontend
+                        │
+                        ▼
+                 Express REST API
+                        │
+        ┌───────────────┼───────────────┐
+        ▼               ▼               ▼
+ Authentication   Donation Service   NGO Service
+                        │
+                        ▼
+                    MongoDB
+                        │
+                        ▼
+              Notification Service
+                  (Future Scope)
+```
+
+---
+
+## Repository Structure
 
 ```text
 Food-Redistribution-Platform/
@@ -212,95 +131,87 @@ LICENSE
 .gitignore
 ```
 
-# Development Roadmap
+---
 
-## Phase 1
+## Development Roadmap
 
+### Phase 1
+
+* Repository Setup
 * Requirement Analysis
-* Repository Setup
 * System Design
-* Database Design
-
-## Phase 2
-
-* React Frontend
-* User Authentication
-* Responsive UI
-
-## Phase 3
-
-* Express Backend
-* REST APIs
-* MongoDB Integration
-
-## Phase 4
-
-* Smart Donation Matching
-* Notifications
-* Analytics Dashboard
-
-## Phase 5
-
-* Testing
-* Deployment
 * Documentation
-* Performance Optimization
 
-# 🚧 Current Progress
+### Phase 2
 
-## ✅ Completed
+* Frontend Development
+* Authentication
+* Dashboard UI
+
+### Phase 3
+
+* Backend APIs
+* Database Integration
+* Donation Management
+
+### Phase 4
+
+* Matching Algorithm
+* Notifications
+* Deployment
+
+---
+
+## Current Progress
+
+Completed
 
 * Repository Setup
-* Problem Analysis
-* Requirement Gathering
-* Stakeholder Identification
+* Project Planning
+* Requirement Analysis
 * Initial Documentation
 
-## In Progress
+Currently Working On
 
 * System Architecture
 * Database Design
-* UI Design
-* API Planning
-
-## Upcoming
-
 * Frontend Development
-* Backend Development
-* Authentication
-* Smart Matching
-* Deployment
 
+---
 
-# Future Scope
+## Future Enhancements
 
-* AI Based Donation Prediction
-* Route Optimization
-* Volunteer Management
-* Mobile Application
-* QR Code Based Tracking
-* Carbon Footprint Analytics
-* Multi Language Support
+* AI assisted donation recommendations
+* Route optimization for pickups
+* Volunteer management
+* QR code based donation tracking
+* Mobile application
+* Carbon footprint analytics
 
-# Vision
+---
 
-To build a scalable and reliable technology platform that empowers communities by reducing food waste, improving food accessibility, and enabling seamless coordination between donors, NGOs, and administrators.
+## Documentation
 
-The long term vision is to establish an ecosystem where surplus food reaches those who need it most through intelligent, transparent, and efficient digital infrastructure.
+Detailed project documentation will be maintained inside the `docs/` directory.
 
-# Contributing
+Upcoming documentation includes:
+
+* System Architecture
+* Database Design
+* API Documentation
+* User Flows
+* Deployment Guide
+
+---
+
+## Contributing
 
 This project is currently under active development.
 
-Contributions, ideas, and suggestions will be welcomed once the initial MVP is completed.
+Contribution guidelines will be published after the initial MVP is completed.
 
-# License
+---
+
+## License
 
 This project is licensed under the MIT License.
-
-## Author
-
-**Sreenidhi K**
-
-M.Sc. Chemistry + B.E. Mathematics and Computing
-BITS Pilani
