@@ -13,7 +13,17 @@ Food wastage and food insecurity continue to coexist despite significant advance
 The Food Redistribution Platform aims to bridge this gap by creating a centralized ecosystem where restaurants, hotels, supermarkets, corporate cafeterias, and other food providers can donate surplus food to verified NGOs. The platform focuses on simplifying donation workflows, improving operational efficiency, and ensuring transparency throughout the redistribution process.
 
 ---
+## Project Goals
 
+The platform is designed to:
+
+* Reduce food wastage through efficient redistribution.
+* Improve coordination between food donors and NGOs.
+* Increase transparency across the donation lifecycle.
+* Minimize manual communication and administrative effort.
+* Build a scalable platform capable of supporting multiple cities.
+
+---
 ## Problem Statement
 
 Existing food donation processes are often manual, fragmented, and difficult to coordinate.
@@ -44,7 +54,7 @@ The platform enables:
 
 ---
 
-## Planned Features
+## Core Features
 
 ### Authentication
 
@@ -94,21 +104,22 @@ The platform enables:
 ## High Level Architecture
 
 ```text
-                 React Frontend
-                        │
-                        ▼
-                 Express REST API
-                        │
-        ┌───────────────┼───────────────┐
-        ▼               ▼               ▼
- Authentication   Donation Service   NGO Service
-                        │
-                        ▼
-                    MongoDB
-                        │
-                        ▼
-              Notification Service
-                  (Future Scope)
+                     React Frontend
+                           │
+                           ▼
+                   Express REST API
+                           │
+      ┌───────────┬──────────┬───────────┐
+      ▼           ▼          ▼           ▼
+ Authentication Donations  NGOs      Administration
+      │           │          │           │
+      └───────────┴──────────┴───────────┘
+                     │
+                     ▼
+                  MongoDB
+                     │
+                     ▼
+             Notification Service
 ```
 
 ---
