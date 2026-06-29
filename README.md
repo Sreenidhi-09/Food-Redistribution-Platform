@@ -1,7 +1,4 @@
 # Food-Redistribution-Platform
-A full stack web platform connecting surplus food providers with NGOs to reduce food wastage through efficient donation matching and logistics coordination.
-# 🍽️ Food Redistribution Platform
-
 <p align="center">
 A full stack web platform that connects surplus food providers with NGOs, enabling efficient food redistribution and reducing food waste through optimized coordination and transparent logistics.
 </p>
