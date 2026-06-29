@@ -1,5 +1,5 @@
-<p align="center">
 # Food-Redistribution-Platform
+</p>
 A full stack web platform that connects surplus food providers with NGOs, enabling efficient food redistribution and reducing food waste through optimized coordination and transparent logistics.
 </p>
 
