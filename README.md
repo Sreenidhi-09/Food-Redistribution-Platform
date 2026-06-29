@@ -213,14 +213,6 @@ Upcoming documentation includes:
 
 ---
 
-## Contributing
-
-This project is currently under active development.
-
-Contribution guidelines will be published after the initial MVP is completed.
-
----
-
 ## License
 
 This project is licensed under the MIT License.
